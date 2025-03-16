@@ -28,8 +28,8 @@ function default_data() {
     $data = get_option(GEO_FEED_MAXMIND_OPTION, []);
     if (empty($data)) {
         $data = [
-            ['ip_prefix' => '185.191.143.0/24', 'country' => 'RU', 'region' => 'STA', 'city' => 'Stavropol', 'postal_code' => ''],
-            ['ip_prefix' => '45.146.40.0/24', 'country' => 'RU', 'region' => 'STA', 'city' => 'Stavropol', 'postal_code' => '']
+            ['ip_prefix' => '0.0.0.0/24', 'country' => 'RU', 'region' => 'STA', 'city' => 'Stavropol', 'postal_code' => ''],
+            ['ip_prefix' => '0.0.0.0/24', 'country' => 'RU', 'region' => 'STA', 'city' => 'Stavropol', 'postal_code' => '']
         ];
         update_option(GEO_FEED_MAXMIND_OPTION, $data);
     }
